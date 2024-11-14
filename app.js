@@ -43,7 +43,10 @@ const createHaiku = () => {
     fiveSyllablesAfternoon[randomNumGenerator()],
   );
 
-  return haiku;
+  const formattedHaiku = haiku.join(",\n");
+
+  return formattedHaiku;
 };
 
+console.log("Generated Haiku: \n");
 console.log(createHaiku());
